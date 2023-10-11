@@ -2,10 +2,10 @@ export abstract class Bebe {
 
     private id: string;
     private nome: string;
-    private peso: string;
-    private altura: string;
+    private peso: number;
+    private altura: number;
 
-    public constructor(_id: string, _nome: string, _peso: string, _altura: string) {
+    public constructor(_id: string, _nome: string, _peso: number, _altura: number) {
 
         this.id = _id;
         this.nome = _nome;
@@ -29,17 +29,17 @@ export abstract class Bebe {
         return this.nome;
     }
 
-    public setPeso(_peso: string): void {
+    public setPeso(_peso: number): void {
         this.peso = _peso;
     }
-    public getPeso(): string {
+    public getPeso(): number {
         return this.peso;
     }
 
-    public setAltura(_altura: string): void {
+    public setAltura(_altura: number): void {
         this.altura = _altura;
     }
-    public getAltura(): string {
+    public getAltura(): number{
         return this.altura;
     }
 }
